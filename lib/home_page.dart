@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar( centerTitle: true,
-        title: Text("Notes"),
+        title: Text("Weather"),
       ),
 
       body: Center(
@@ -34,6 +34,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text("Temp: ${context.select((NoteBloc bloc) => bloc.state.temp)}", style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),),
             Text("Country: ${context.select((NoteBloc bloc) => bloc.state.country)}", style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),),
+            Text("Name : ${context.select((NoteBloc bloc) => bloc.state.name)}", style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),),
           ],
         ),
       ),

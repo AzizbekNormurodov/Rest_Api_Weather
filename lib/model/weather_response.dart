@@ -104,6 +104,7 @@ class Sys {
   num? sunrise;
   num? sunset;
 
+
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['type'] = type;

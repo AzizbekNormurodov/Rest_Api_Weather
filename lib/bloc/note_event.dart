@@ -5,7 +5,7 @@ abstract class NoteEvent extends Equatable {
 }
 
 class NoteNetworkEvent extends NoteEvent {
-  const NoteNetworkEvent ();
+   NoteNetworkEvent ();
   @override
   List<Object?> get props => [];
 }
